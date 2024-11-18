@@ -1,0 +1,93 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+input{
+  width: 50%;
+  height: 40px;
+  padding: 0 10px  0 10px;
+  color: #fff;
+  border-radius: 15px;
+  background-color: #424242;
+  outline: none;
+  border: 1px solid black;
+  transition: all 700ms;
+}
+input:focus{
+  border-color: green;
+}
+input::placeholder{
+  color: #fff;
+}
+
+#ingredients {
+  padding: 10px;
+  font-size: 16px;
+  width: 70%;
+}
+#recipeResults{
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+  background-color: #1a1a1a;
+  max-height: 350px;
+  flex-direction: column;
+  list-style-type: none;
+
+}
+
+
+#recipeResults li {
+  margin: 10px 0;
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  border-radius: 15px;
+  color: #fff;
+  align-items: center;
+  cursor: pointer;
+}
+#recipecont{
+  margin-top: 30px;
+  border-radius: 15px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px;
+  background-color: #1a1a1a;
+  width: 72%;
+}
+#recipeResults li:hover{
+  background-color: #242424;
+}
+#recipeResults::-webkit-scrollbar{
+  width: 5px;
+}
+#recipeResults::-webkit-scrollbar-track{
+  border:1px solid transparent;
+}
+#recipeResults::-webkit-scrollbar-thumb{
+  border:5px solid #fff;
+  border-radius: 15px;
+}
+
+#recipeResults li img{
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+#recipeResults a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#recipeResults a:hover {
+  text-decoration: underline;
+}
